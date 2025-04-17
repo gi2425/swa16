@@ -8,11 +8,14 @@
     <%= csp_meta_tag %>
 
     <%= yield :head %>
+    
 
     <%= favicon_link_tag 'icon.png', :rel => 'shortcut icon', :type => 'image/png' %>
     <%= favicon_link_tag 'icon.png', :rel => 'apple-touch-icon', :type => 'image/png' %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag :main %>
+    <%= javascript_importmap_tags%>
+
   </head>
 
   <body>
